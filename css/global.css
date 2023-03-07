@@ -23,6 +23,7 @@ body {
 img {
   width: 10em;
   margin-bottom: 2%;
+  padding-left: 2%;
 }
 
 a {
@@ -42,11 +43,6 @@ a {
   cursor: pointer;
   margin: 0rem 1rem;
   right: 2px;
-}
-
-.fa-x {
-  margin: 1.5%;
-  display: none;
 }
 
 .fa-bars {
@@ -75,12 +71,4 @@ a {
 
 .nav__checkbox:checked ~ ul.nav__menu li {
   display: block;
-}
-
-.nav__checkbox:checked ~ label#nav__toggle .fa-x {
-  display:block;
-}
-
-.nav__checkbox:checked ~ label#nav__toggle .fa-bars {
-  display: none;
 }
