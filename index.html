@@ -12,25 +12,25 @@
     <title>CV - Jonathan Tello Carrasco</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <a class="logo-nav"
-          ><img src="/logo-jony.png" alt="logo-jony" class="logo"
-        /></a>
-        <input type="checkbox" class="check" />
-
+    <nav class="nav">
+      <img src="./logo-jony.png" alt="logo-jony" />
+      <input type="checkbox" class="nav__checkbox" id="nav__checkbox"/>
+      <label for="nav__checkbox" id="nav__toggle">
+        
+        <i class="fa-solid fa-x"></i>
         <i class="fa-solid fa-bars"></i>
+      </label>
+      <ul class="nav__menu">
+        <li><a href="#personal">Datos Personales</a></li>
+        <li><a href="#Estudios">Estudios</a></li>
+        <li><a href="#ExpLaboral">Experiencia Laboral</a></li>
+        <li><a href="#HabilidadFortaleza">Habilidades y Fortalezas</a></li>
+      </ul>
+    </nav>
 
-        <ul class="nav-menu-links">
-          <li class="options"><a href="#">Datos Personales</a></li>
-          <li class="options"><a href="#">Estudios</a></li>
-          <li class="options"><a href="#">Experiencia y Habilidades</a></li>
-        </ul>
-      </nav>
-      |
-    </header>
     <main>
-      <article class="personal-dates-flex">
+      <!-- principal-->
+      <article id="personal">
         <h3>Datos Personales</h3>
         <p>
           <strong>Edad:</strong> 32 Años.<br />
@@ -39,7 +39,9 @@
           <br />
         </p>
       </article>
-      <article class="skill-flex">
+
+      <!-- seccion experiencia laboral-->
+      <article id="ExpLaboral">
         <h3>Experiencia Laboral</h3>
         <h4>Rubro Grafico - 10 Años de Experiencia</h4>
         <p>
@@ -96,7 +98,9 @@
         </ul>
       </article>
 
-      <article>
+      <!-- seccion estudios / capacitaciones-->
+
+      <article id="Estudios">
         <h3>Estudios y Capacitaciones</h3>
         <ul>
           <li>
@@ -114,7 +118,9 @@
         </ul>
       </article>
 
-      <article>
+      <!-- seccion skils-->
+
+      <article id="HabilidadFortaleza">
         <h3>Fortalezas</h3>
         <article>
           <ul>
