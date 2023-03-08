@@ -2,10 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,500;0,700;1,200;1,400;1,500;1,700&display=swap");
 
 :root {
-  --primary-color1: #1b2430;
-  ---primary-color2: #816797;
-  --alternative-color1: #d6d5a8;
-  --alternative-color2: #51557e;
+  --primary-color1: #181d31;
+  ---primary-color2: #678983;
+  --alternative-color1: #e6ddc4;
+  --alternative-color2: #f0e9d2;
 }
 
 * {
@@ -17,7 +17,9 @@
 
 body {
   height: 100vh;
-  background-color: var(--primary-color1);
+  background-image: url(/img/bg-jonydev.jpg);
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 img {
@@ -33,6 +35,41 @@ a {
   font-size: 1.4rem;
 }
 
+article {
+  opacity: 0.92;
+  margin: 5% 0;
+  padding: 5%;
+  background-color: var(--primary-color1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.personal_container {
+  background-color: var(--alternative-color1);
+}
+
+.personal_container h3 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 2rem;
+  padding-bottom: 8%;
+}
+
+.personal_container p {
+  color: var(--primary-color1);
+  font-size: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  line-height: 1.5rem;
+}
+
+.personal_container strong {
+  font-weight: bold;
+}
+
 .nav {
   padding-top: 3%;
   background-color: var(---primary-color2);
@@ -46,7 +83,7 @@ a {
 }
 
 .fa-bars {
- margin: 1.5%;
+  margin: 1.5%;
 }
 
 .nav__checkbox {
@@ -71,4 +108,77 @@ a {
 
 .nav__checkbox:checked ~ ul.nav__menu li {
   display: block;
+}
+
+.foto-perfil {
+  width: 170px;
+  height: 170px;
+}
+
+.foto-perfil img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.laboral_container h3 {
+  color: var(---primary-color2);
+  font-weight: 700;
+  font-size: 2rem;
+  padding-bottom: 5%;
+  text-align: center;
+}
+
+.laboral_container h4 {
+  font-weight: bold;
+  padding-bottom: 5%;
+  text-align: center;
+}
+
+.laboral_container h4,
+p {
+  color: var(--alternative-color1);
+  text-align: center;
+}
+
+.laboral_container p {
+  line-height: 1;
+  padding-bottom: 3%;
+}
+
+.laboral_container ul {
+  padding: 5%;
+  text-align: center;
+  color: var(--alternative-color1);
+  line-height: 2rem;
+}
+
+.laboral_container ul strong {
+  color: var(---primary-color2);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.estudios-capacitaciones h3 {
+  color: var(---primary-color2);
+  font-weight: 700;
+  font-size: 2rem;
+  padding-bottom: 5%;
+  text-align: center;
+}
+
+.estudios-capacitaciones strong {
+  color: var(--alternative-color1);
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.design{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--alternative-color1);
+  height: 50px;
+  color: var(--primary-color1);
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
