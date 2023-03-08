@@ -173,12 +173,57 @@ p {
   font-weight: 700;
 }
 
-.design{
+.design {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: var(--alternative-color1);
   height: 50px;
   color: var(--primary-color1);
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media (min-width: 768px) {
+
+  main{
+display: grid;
+grid-template-columns: 1fr 1fr;
+margin: 3%;
+  }
+
+  .fa-bars {
+    margin: 1.5%;
+  }
+
+  img {
+    width: 15em;
+    margin-bottom: 2%;
+    padding-left: 2%;
+  }
+
+  .foto-perfil {
+    width: 250px;
+    height: 250px;
+  }
+
+  a {
+    font-family: "Nunito", sans-serif;
+    text-decoration: none;
+    color: var(---primary-color2);
+    font-size: 1.8rem;
+  }
+
+  article {
+    opacity: 0.92;
+    margin: 5% 0;
+    padding: 5%;
+    background-color: var(--primary-color1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1200px) {
 }
