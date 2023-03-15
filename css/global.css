@@ -188,7 +188,7 @@ p {
   main{
 display: grid;
 grid-template-columns: 1fr 1fr;
-column-gap: 3em;
+column-gap: 1em;
 row-gap: 10px;
   }
 
