@@ -9,6 +9,16 @@
       src="https://kit.fontawesome.com/cc54d57396.js"
       crossorigin="anonymous"
     ></script>
+    <script> 
+        $(document).ready(function(){
+           $(‘.behance-container’).embedBehance({
+             // behance API Key 
+              apiKey: ‘EL TEXTO DEL API KEY’, 
+            // Behance Username 
+              userName: ‘TU NOMBRE DE USUARIO’,infiniteScrolling: true, 
+           }); 
+       });
+    </script>
     <title>Trabajos de diseño grafico - Jonathan Tello Carrasco</title>
   </head>
   <body>
@@ -26,8 +36,12 @@
       </ul>
     </nav>
     <main>
+        
+ <!-- THE BEHANCE PORTFOLIO WILL BE PRINTED IN HERE -->
+<div class=”behance-container”></div>
+        
         <div>
-            Espacio en Construcción <a href="/index.html">Regresar a pagina principal</a>
+           <a href="/index.html">Regresar a pagina principal</a>
         </div>
     </main>
 
