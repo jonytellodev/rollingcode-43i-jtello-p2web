@@ -185,12 +185,16 @@ p {
 
 @media (min-width: 768px) {
 
+  body{
+    margin: 2em;
+
+  }
+
   main{
 display: grid;
 grid-template-columns: 1fr 1fr;
 column-gap: 1em;
 row-gap: 10px;
-margin: 2em;
   }
 
   .fa-bars {
