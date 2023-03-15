@@ -190,6 +190,7 @@ p {
     grid-template-columns: 1fr 1fr;
     column-gap: 1em;
     row-gap: 10px;
+    margin: 2em;
   }
 
   .fa-bars {
