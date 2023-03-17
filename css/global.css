@@ -187,19 +187,52 @@ p {
   main {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 3%;
+    grid-template-areas:
+    "personal personal"
+    "laboral laboral"
+    "capacitacion habilidad";
+    gap: 2rem;
+    margin: 2%;
+  }
+  
+  .personal_container{
+    grid-area: personal;
   }
 
-  .fa-bars {
+  .laboral_container{grid-area: laboral;}
+  .estudios-capacitaciones{grid-area: capacitacion;}
+  .habilidad_fortaleza{grid-area: habilidad}
+
+  article{
+    margin: 0!important;
+    border-radius: 20px;
+  }
+  
+  
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2%;
+  }
+
+  label{
     display: none;
   }
 
   .nav__menu {
-  display: flex;
-  flex-direction:column;
-  
-  
-}
+    display: flex;
+    flex-direction: row;
+    background-color: initial;
+  }
+
+  .nav__menu li {
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    padding: initial;
+    
+  }
 
   ul.nav__menu li {
     display: flex;
@@ -207,8 +240,8 @@ p {
 
   img {
     width: 15em;
-    margin-bottom: 2%;
-    padding-left: 2%;
+    margin-bottom: 0;
+    padding-left: 0;
   }
 
   .foto-perfil {
@@ -219,8 +252,11 @@ p {
   a {
     font-family: "Nunito", sans-serif;
     text-decoration: none;
-    color: var(---primary-color2);
-    font-size: 1.8rem;
+    color: white;
+  }
+
+  a:hover{
+    color: rgb(190, 190, 190);
   }
 
   article {
@@ -233,6 +269,38 @@ p {
     justify-content: center;
     align-items: center;
   }
+
+  .laboral_container h3 {
+  color: var(---primary-color2);
+  font-weight: 700;
+  font-size: 2rem;
+  padding-bottom: 2%;
+  text-align: center;
+}
+
+.laboral_container h4 {
+  font-weight: bold;
+  padding-bottom: 2%;
+  text-align: center;
+}
+
+.laboral_container h4,
+p {
+  color: var(--alternative-color1);
+  text-align: center;
+}
+
+.laboral_container p {
+  line-height: 1;
+}
+
+.laboral_container ul {
+  padding: 2%;
+  text-align: center;
+  color: var(--alternative-color1);
+  line-height: 1.8rem;
+}
+
 }
 
 @media (min-width: 1200px) {
